@@ -18,6 +18,10 @@ Agent-defined specs → byte-deterministic HTML. Stdlib only. One file.
 
 </div>
 
+<p align="center">
+  <img width="840" alt="CHECKLST demo — a rendered release-acceptance checklist at 10 of 10 done, with per-item Works/Doesn't status pills and evidence notes" src="docs/demo-screenshot.png">
+</p>
+
 ---
 
 `checklst` turns a plain JSON spec into a polished, standalone, dark-theme

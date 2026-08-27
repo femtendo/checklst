@@ -1,14 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-  <!-- CHECKLST mascot: a blushing rounded checkbox buddy -->
-  <rect x="8" y="8" width="80" height="80" rx="22" fill="#fdf6ea" stroke="#2dd4bf" stroke-width="4"/>
-  <path d="M28 50 L43 64 L69 33" stroke="#2dd4bf" stroke-width="9" fill="none"
+  <!-- CHECKLST mark: a dapper checkbox — bowtied checkmark in specs -->
+  <rect x="8" y="8" width="80" height="80" rx="22" fill="#fdf6ea" stroke="#0f9b8e" stroke-width="4"/>
+  <!-- checkmark -->
+  <path d="M26 52 L42 67 L70 32" stroke="#0f9b8e" stroke-width="9" fill="none"
         stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="34" cy="30" r="5.5" fill="#1f2430"/><!-- eye -->
-  <circle cx="52" cy="26" r="5.5" fill="#1f2430"/><!-- eye -->
-  <circle cx="32.5" cy="31.5" r="1.8" fill="#fdf6ea"/><!-- pupil glint -->
-  <circle cx="50.5" cy="27.5" r="1.8" fill="#fdf6ea"/>
-  <ellipse cx="24" cy="38" rx="6" ry="3.6" fill="#ff8fab" opacity=".85"/><!-- blush -->
-  <ellipse cx="62" cy="33" rx="6" ry="3.6" fill="#ff8fab" opacity=".85"/>
-  <circle cx="76" cy="18" r="10" fill="#ffcc00"/><!-- sparkle star buddy -->
-  <path d="M76 11 L78 16 L83 18 L78 20 L76 25 L74 20 L69 18 L74 16 Z" fill="#fff4cf"/>
+  <!-- glasses: two round lenses straddling the checkmark stroke, bridge + arms -->
+  <circle cx="38" cy="46" r="11" fill="#0b0f14" opacity=".35" stroke="#1f2430" stroke-width="3.5"/>
+  <circle cx="62" cy="44" r="11" fill="#0b0f14" opacity=".35" stroke="#1f2430" stroke-width="3.5"/>
+  <path d="M49 45 Q52 42.5 55 44.5" stroke="#1f2430" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M27 46 L18 43" stroke="#1f2430" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M73 44 L82 41" stroke="#1f2430" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- bowtie at the checkmark's elbow -->
+  <g transform="translate(46 64)">
+    <path d="M0 0 L-12 -7 L-12 7 Z" fill="#ec6ed0"/>
+    <path d="M0 0 L12 -7 L12 7 Z" fill="#ec6ed0"/>
+    <circle cx="0" cy="0" r="3.2" fill="#c94fb0"/>
+  </g>
 </svg>

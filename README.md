@@ -64,7 +64,7 @@ that keep the whole operation honest.
 No install. Clone once, or just grab `v1.0/checklst.py`:
 
 ```bash
-git clone https://github.com/your-org/checklst
+git clone https://github.com/femtendo/checklst
 cd checklst
 
 # 1. Generate a starter spec

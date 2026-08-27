@@ -1,16 +1,32 @@
-MIT License
-
+The Checkbox License
+Based on the MIT License, with an added conscience clause.
 Copyright (c) 2026 femtendo contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+in the Software without restriction, INCLUDING the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, EXCEPT as limited by the Conscience Clause below.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+CONSCIENCE CLAUSE
+
+The rights granted above are withheld from any person or organization that:
+
+  1. develops, operates, or materially supports mass-surveillance systems
+     targeting populations without their informed consent; or
+
+  2. provides products or services to military or defense customers where
+     those products or services contribute to the planning or execution of
+     armed force, including weapons targeting, intelligence collection for
+     strikes, or battlefield logistics; or
+
+  3. acts as a contractor, subsidiary, or front entity carrying out either
+     of the above on behalf of another party.
+
+An individual contributor who personally worked in such roles retains their
+rights under this license so long as they do not use the Software to continue
+that work. The clause targets what the Software is used FOR -- never ancestry,
+nationality, belief, or lawful past employment unrelated to such systems.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,3 +35,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Enforcement note: if you believe your use qualifies for an exception, contact
+the copyright holders before relying on one. We would rather grant a narrow
+exemption in the open than litigate in bad faith.

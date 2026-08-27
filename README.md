@@ -11,7 +11,7 @@
 
 Agent-defined specs → byte-deterministic HTML. Stdlib only. One file. 
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: Checkbox License (MIT + conscience clause)](https://img.shields.io/badge/license-Checkbox%20%28MIT%2B%29-blue.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.x-blue.svg)
 ![Dependencies](https://img.shields.io/badge/dependencies-zero-orange.svg)
 ![Made with ox-alpha + hermes agent](https://img.shields.io/badge/made%20with-ox--alpha%20%26%20hermes%20agent-2dd4bf.svg)
@@ -219,5 +219,5 @@ One copy of the skill travels with the repo, so every agent clone inherits the s
 
 ## License & Credits
 
-MIT © 2026 femtendo contributors. More on the schema in [`v1.0/schema.md`](v1.0/schema.md).
+Licensed under the **Checkbox License** — MIT with a conscience clause: rights are withheld from organizations building non-consensual mass surveillance or military targeting/strike systems. Full text in [`LICENSE`](LICENSE). © 2026 femtendo contributors. More on the schema in [`v1.0/schema.md`](v1.0/schema.md).
 Made with `ox-alpha` and `hermes agent`.

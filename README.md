@@ -156,7 +156,6 @@ That's **20+ presets** across game franchises, vocaloids, ponies, and utility.
 ## Agent Pipeline
 
 CHECKLST was built to keep multi-agent pipelines honest. Three moving parts:
-
 1. **`passdown`** — hand a spec to a subagent. The spec must opt in via
    `config.allow_passdown: true`; otherwise the command exits `1` with
    `spec locked by author`. The rendered page embeds a delegation banner,
@@ -194,6 +193,29 @@ round-trip — `parse(build_results(spec))` — is asserted over several specs i
 > checklists. One file, zero deps, works on a USB stick from `file://`.
 > Agents and humans get the same honest, verifiable page — with a little
 > pixel-art celebration when things pass. That's the whole point.
+
+## For Agents: Bundle Skill
+
+CHECKLST ships as an installable agent skill — [`skills/checklst/SKILL.md`](skills/checklst/SKILL.md) — that teaches any harness exactly **what CHECKLST is for, when to reach for it, and how to drive it** (spec authoring rules, delegation flow, anti-fabrication hard rules).
+
+| Harness | Install |
+|---------|---------|
+| **Hermes Agent** | `cp -r skills/checklst ~/.hermes/skills/` — auto-discovered on next session |
+| **Claude Code / Claude Desktop** | `cp -r skills/checklst .claude/skills/` (repo-level) or `~/.claude/skills/` (global); same YAML-frontmatter contract |
+| **Codex CLI / AGENTS.md harnesses** | add one paragraph from the skill's *Generic* section to your repo's `AGENTS.md` |
+| **Anything else** | paste the two-line *Generic* rule into your system prompt |
+
+What the skill gives an agent:
+
+- **Trigger discipline** — when a checklist is warranted (verification gates,
+  QA sweeps, delegation evidence) and when it isn't.
+- **Authoring fluency** — schema shortcuts, preset-vs-custom choices, theme and
+  webhook blocks, without reading source code.
+- **Orchestration pattern** — the full orchestrator → `passdown` → subagent →
+  webhook → `parse` → diff loop, step by step.
+- **Anti-fabrication rules** — hard constraints like *"a filled checklist must reflect what you actually verified; `Doesn't` with a note beats a lying `Works`."*
+
+One copy of the skill travels with the repo, so every agent clone inherits the same working knowledge.
 
 ## License & Credits
 

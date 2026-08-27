@@ -175,7 +175,7 @@
     }
   ],
   "agent": {
-    "webhook_url": "http://127.0.0.1:8765",
+    "webhook_url": "https://example.com/hook",
     "name": "ox-alpha",
     "timeout_ms": 10000
   }

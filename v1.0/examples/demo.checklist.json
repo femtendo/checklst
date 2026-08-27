@@ -1,0 +1,182 @@
+{
+  "title": "Release Acceptance Checklist",
+  "theme": {
+    "accent": "#2dd4bf",
+    "accent2": "#34d399",
+    "font": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+  },
+  "categories": [
+    {
+      "id": "build",
+      "name": "Build & Deployment",
+      "goal": "The artifact builds cleanly, ships, and comes up healthy.",
+      "collapsed_default": false,
+      "items": [
+        {
+          "id": "build-clean",
+          "text": "Project builds without errors or warnings",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            }
+          },
+          "notes": "Record the real exit code / wall-clock time."
+        },
+        {
+          "id": "build-artifacts",
+          "text": "All expected artifacts are produced",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            }
+          }
+        },
+        {
+          "id": "build-deploy",
+          "text": "Latest build deployed to a staging environment",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            },
+            "rollback_required": {
+              "value": false,
+              "description": "Do we need a documented rollback path?"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "qa",
+      "name": "Quality & Behaviors",
+      "goal": "Core user flows behave correctly across the surface area.",
+      "collapsed_default": false,
+      "items": [
+        {
+          "id": "qa-login",
+          "text": "Login flow works for a valid user",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            }
+          }
+        },
+        {
+          "id": "qa-danger",
+          "text": "Danger-zone actions ask for confirmation",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            }
+          }
+        },
+        {
+          "id": "qa-depth",
+          "text": "Smoke-testing performed at the requested depth",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            },
+            "testing_depth": {
+              "value": "basic",
+              "description": "How far did verification go?",
+              "choices": [
+                "none",
+                "basic",
+                "deep"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "polish",
+      "name": "Polish & Handoff",
+      "goal": "The deliverable looks professional and is easy to pick up.",
+      "collapsed_default": true,
+      "items": [
+        {
+          "id": "handoff-notes",
+          "text": "Handoff notes are written and current",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                {
+                  "value": "Works",
+                  "color": "#3fb950"
+                },
+                {
+                  "value": "Doesn't",
+                  "color": "#d29922"
+                },
+                {
+                  "value": "Bugged",
+                  "color": "#f85149"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "handoff-docs",
+          "text": "Docs mention the changed behaviour",
+          "options": {
+            "status": {
+              "value": "Works",
+              "description": "Does this item work, fail, or is it broken/bugged?",
+              "choices": [
+                "Works",
+                "Doesn't",
+                "Bugged"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "agent": {
+    "webhook_url": "http://127.0.0.1:8765",
+    "name": "ox-alpha",
+    "timeout_ms": 10000
+  }
+}

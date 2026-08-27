@@ -1,10 +1,15 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.svg">
+  <img width="96" height="96" alt="CHECKLST mascot — a blushing checkbox buddy with a sparkle friend" src="docs/logo-light.svg">
+</picture>
+
 # CHECKLST
 
 **the zero-dependency checklist tool for agents and humans**
 
-Agent-defined specs → byte-deterministic HTML. Stdlib only. One file.
+Agent-defined specs → byte-deterministic HTML. Stdlib only. One file. 
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.x-blue.svg)
